@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <title>ADS STORE</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">A</span><div><b>ADS STORE</b><small>Цифровые товары</small></div></div>
+    <button id="cartButton" class="cart">Корзина <span id="cartCount">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">ТВОЯ ЦИФРОВАЯ ПОЛКА</p>
+      <h1>Полезное —<br><span>в одном месте.</span></h1>
+      <p>Гайды, оформление и материалы для твоих устройств.</p>
+      <div class="search-wrap"><input id="search" type="search" placeholder="Найти товар…"></div>
+    </section>
+    <nav id="categories" class="categories">
+      <button class="active" data-category="Все">Все</button>
+      <button data-category="Гайды">Гайды</button>
+      <button data-category="iPhone">iPhone</button>
+      <button data-category="Чек-листы">Чек-листы</button>
+    </nav>
+    <section>
+      <div class="section-title"><h2>Каталог</h2><span id="productCount"></span></div>
+      <div id="products" class="products"></div>
+    </section>
+    <section id="cartPanel" class="cart-panel hidden">
+      <div class="section-title"><h2>Корзина</h2><button id="closeCart">Закрыть</button></div>
+      <div id="cartItems"></div>
+      <p id="cartTotal" class="total"></p>
+      <button class="checkout" id="checkout">Оформление заказа</button>
+      <small class="notice">Демонстрация: оплата пока не подключена.</small>
+    </section>
+  </main>
+  <footer>ADS STORE · Проект находится в разработке</footer>
+  <script src="/app.js"></script>
+</body>
+</html>
